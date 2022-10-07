@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ_07.10", "DZ_07.10\DZ_07.10.csproj", "{EC8CA455-FBD9-4183-80EF-7D558A91ED65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Тумаков", "Тумаков\Тумаков.csproj", "{9B16F8FF-E50B-4CCF-BC37-FA491D4FA150}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EC8CA455-FBD9-4183-80EF-7D558A91ED65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC8CA455-FBD9-4183-80EF-7D558A91ED65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC8CA455-FBD9-4183-80EF-7D558A91ED65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B16F8FF-E50B-4CCF-BC37-FA491D4FA150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B16F8FF-E50B-4CCF-BC37-FA491D4FA150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B16F8FF-E50B-4CCF-BC37-FA491D4FA150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B16F8FF-E50B-4CCF-BC37-FA491D4FA150}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
