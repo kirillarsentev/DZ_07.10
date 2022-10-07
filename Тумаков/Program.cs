@@ -44,11 +44,67 @@ namespace Тумаков
             return Fibonachi(n-1) + Fibonachi(n-2);
         }
 
+        static void Nod(int chsl1, int chsl2)
+        {
+            for (int i = chsl1; i > 0; i--)
+            {
+                if (chsl1 % i == 0)
+                {
+                    if (chsl2 % i == 0)
+                    {
+                        Console.WriteLine(i);
+                        break;
+                    }
+                }
+            }
+            
+        }
+        static void Nod(int chslo1, int chslo2, int chslo3)
+        {
+            for (int i = chslo1; i > 0; i--)
+            {
+                if (chslo1 % i == 0)
+                {
+                    if (chslo2 % i == 0)
+                    {
+                        if (chslo3 % i == 0)
+                        {
+                            Console.WriteLine(i);
+                            break;
+                        }
+                    }
+                }
+            }
+
+        }
+        static void Factor(int c, out bool tf, out long factor)
+        {
+            long fac = 1;
+            factor = 0;
+            try
+            {
+                checked
+                {
+                    for (int i = 1; i < c + 1; i++)
+                    {
+                        fac *= i;
+                    }
+
+                    tf = true;
+
+                }
+                factor = fac;
+            }
+            catch
+            {
+                tf = false;
+            }
+
+        }
 
         static void Main(string[] args)
         {
 
-            /* 
              Console.WriteLine("Дз.Задача 5.1");
              Console.WriteLine("Введите 2 числа");
              int x1 = int.Parse(Console.ReadLine());
@@ -91,7 +147,36 @@ namespace Тумаков
             Console.WriteLine(Fibo2);
             Console.WriteLine(Fibo3);
             Console.WriteLine(Fibo4);
-            Console.WriteLine(Fibo5);*/
+            Console.WriteLine(Fibo5);
+
+            Console.WriteLine("ДЗ. Задача 5.1.1");
+            Console.WriteLine("Введите 2 числа");
+            int chsl1 = int.Parse(Console.ReadLine());
+            int chsl2 = int.Parse(Console.ReadLine());
+            Nod(chsl1, chsl2);
+
+
+            Console.WriteLine("ДЗ. Задача 5.1.2");
+            Console.WriteLine("Введите 3 числа");
+            int chslo1 = int.Parse(Console.ReadLine());
+            int chslo2 = int.Parse(Console.ReadLine());
+            int chslo3 = int.Parse(Console.ReadLine());
+            Nod(chslo1, chslo2, chslo3);
+
+            Console.WriteLine("ДЗ.Задача 5.3");
+            Console.WriteLine("Введите число факториал которого надо найти");
+            int c = int.Parse(Console.ReadLine());
+            bool tf;
+            long factor;
+            Factor(c, out tf, out factor);
+            if (tf == true)
+            { Console.WriteLine(factor); }
+            else
+            { Console.WriteLine(tf); }
+
+
+
+
 
         }
     }
